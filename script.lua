@@ -11,9 +11,9 @@ function OnEvent(event, arg)
     if event == "MOUSE_BUTTON_PRESSED" and arg == 4 then
         repeat
             if IsModifierPressed("lshift") then
-                MoveMouseRelative(-shiftSpeed, 0)
+                MoveMouseRelative(-shiftYawSpeed, 0)
             else
-                MoveMouseRelative(-speed, 0)
+                MoveMouseRelative(-yawSpeed, 0)
             end
             Sleep(sleepTime)
         until not IsMouseButtonPressed(4)
@@ -22,9 +22,9 @@ function OnEvent(event, arg)
     if event == "MOUSE_BUTTON_PRESSED" and arg == 5 then
         repeat
             if IsModifierPressed("lshift") then
-                MoveMouseRelative(shiftSpeed, 0)
+                MoveMouseRelative(shiftYawSpeed, 0)
             else
-                MoveMouseRelative(speed, 0)
+                MoveMouseRelative(yawSpeed, 0)
             end
             Sleep(sleepTime)
         until not IsMouseButtonPressed(5)
